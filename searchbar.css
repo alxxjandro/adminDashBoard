@@ -1,0 +1,50 @@
+*{
+    font-family: "Roboto",sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    display: flex;
+}
+
+/*  ~ ~ ~  */
+
+.right-side{
+    width: 100%;
+}
+
+.top-header{
+    height: 18vh;
+    border: solid 1px red;
+}
+
+/*  ~ ~ ~  */
+
+.search-bar{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-part,
+.bottom-part{
+
+}
+
+.top-part{
+    width: 100%;
+    flex: 2;
+    background-color: blue;
+}
+
+.bottom-part{
+    width: 100%;
+    flex: 3;
+    background-color: cyan;
+}
+
+div > img{
+    width: 25px;
+}
