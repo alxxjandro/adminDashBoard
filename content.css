@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(241, 241, 241);
+}
+
+.bodyContent{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 18vh;
+    margin-left: 15em;
+    padding: 1rem;
+    background-color: rgb(241, 241, 241);
+}
+
+.bodyContent > div:first-child{
+}
+
+.grid-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: 20px auto;
+    row-gap: rem;
+    column-gap: 1rem;
+    padding: 1rem;;
+}
+
+.grid-title{
+    font-size: 1.2rem;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    height: 2rem;
+}
+
+.grid-space{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 200px;
+    font-size: .9rem;
+    margin: 1rem .2rem;
+    padding: 1.6rem 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    border-left: 10px solid rgb(243, 206, 73);
+}
+
+.grid-space > div:nth-child(2){
+    cursor: pointer;
+    align-self: end;
+    display: flex;
+    gap: 1.3rem;
+}
+
+.grid-space > div > span{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.grid-content > div{
+
+}
+
+/* ~ ~ ~ */
+
+.grid-side{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-side > div{
+    min-width: 300px;
+    flex: 1;
+    border: solid 1px red;
+}

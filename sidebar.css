@@ -1,11 +1,12 @@
 .sidebar{
     color: white;
     height: 100vh;
-    width: 17em;
+    width: 15em;
     gap: 3rem;
     display: flex;
     flex-direction: column;
     background-color:  rgb(38, 137, 218);
+    position: fixed;
 }
 
 h1{

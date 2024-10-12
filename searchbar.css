@@ -15,8 +15,15 @@
     width: 100%;
 }
 
-.top-header{
+.top-header {
+    position: fixed; 
+    top: 0;
+    left: 15em;
+    width: calc(100% - 15em);
     height: 18vh;
+    background-color: white;
+    z-index: 1000; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .search-bar{
