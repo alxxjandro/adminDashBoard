@@ -28,17 +28,15 @@
 .top-part{
     width: 100%;
     flex: 2;
-    border: solid 1px blue;
 }
 
 .bottom-part{
     width: 100%;
     flex: 3;
-    border: solid 1px green;
 }
 
 div > img{
-    width: 25px;
+    width: 20px;
 }
 
 /*  ~ ~ ~  */
@@ -91,4 +89,63 @@ div > img{
     height: 2rem;
     min-width: 250px;
     max-width: 600px;
+}
+
+/*  ~ ~ ~  */
+
+.bottom-part{
+    display: flex;
+}
+
+.profile{
+    flex: 2;
+
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile > img{
+    margin-left: 2rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+
+.profile > p > span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.profile > p{
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.search-buttons{
+    flex: 2;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.search-buttons > button{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(38, 137, 218);
+    border: none;
+    transition: opacity .2s ease-in;
+}
+
+.search-buttons > button:hover{
+    opacity: .6;
+}
+
+.search-buttons > button:active{
+    opacity: .4;
 }

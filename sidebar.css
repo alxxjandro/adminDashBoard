@@ -1,10 +1,11 @@
 .sidebar{
+    color: white;
     height: 100vh;
     width: 17em;
     gap: 3rem;
     display: flex;
     flex-direction: column;
-    background-color: #e2e8f0;
+    background-color:  rgb(38, 137, 218);
 }
 
 h1{
@@ -14,6 +15,11 @@ h1{
 .button{
     font-size: 1.2rem;
     cursor: pointer;
+}
+
+.button > img,
+.dashboardTitle > img{
+    filter: invert(100%);
 }
 
 .dashboardTitle{
@@ -29,7 +35,7 @@ h1{
     flex-direction: column;
     align-self: center;
     width: 14em;
-    gap: .6rem;
+    gap: .8rem;
     padding-left: 1rem;
 }
 
