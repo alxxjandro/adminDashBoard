@@ -11,9 +11,6 @@ body{
     background-color: rgb(241, 241, 241);
 }
 
-.bodyContent > div:first-child{
-}
-
 .grid-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -28,6 +25,7 @@ body{
     grid-column: 1/-1;
     grid-row: 1/-1;
     height: 2rem;
+
 }
 
 .grid-space{
@@ -57,19 +55,75 @@ body{
     font-weight: bold;
 }
 
-.grid-content > div{
-
-}
-
 /* ~ ~ ~ */
-
 .grid-side{
     display: flex;
     flex-direction: column;
 }
 
 .grid-side > div{
+    padding: 1rem;
     min-width: 300px;
     flex: 1;
-    border: solid 1px red;
+
+}
+
+.grid-side-content{
+    font-size: 1.1rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+}
+
+.grid-side-content > div:nth-child(2){
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    font-size: .8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+div > p > span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* ~ ~ ~ */
+
+.trendingPart{
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.trendingCube{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.trendingPartFlex{
+    display: flex;
+    gap: 1rem;
+}
+
+.trendingPartFlex > p{
+    align-content: center;
+}
+
+.trendingPartFlex > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
 }
